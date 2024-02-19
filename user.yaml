@@ -1,2 +1,10 @@
 token:
   secret: hwiroro
+  header-name: X-AUTH-TOKEN
+  refresh-header-name: X-AUTH-REFRESH-TOKEN
+  valid-time: 30000
+  refresh-valid-time: 720000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
